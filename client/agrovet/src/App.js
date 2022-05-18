@@ -1,12 +1,13 @@
 import './App.css';
+import styled from "styled-components"
 import Nav from './component/Navbar/Nav';
+import Product from './component/products/Product';
 function App() {
   return (
-    <div className="">
-     <h1>
-       <Nav/>
-     </h1>
-    </div>
+    <>
+     <Nav/>
+     <Product/>
+    </>
   );
 }
 
