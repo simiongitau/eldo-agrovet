@@ -16,14 +16,15 @@ export default function Side() {
         padding-top:15px;
         padding-bottom:15px;
         margin-left:30px;
-        margin-bottom:30px;
+        margin-bottom:20px;
         border-radius:10px;
         cursor:pointer;
-        font-size:15px;
+        font-size:12px;
         font-weight:100;
         border:none;
         outline:none;
         text-transform:uppercase;
+        height:60px;
     };
     div{
         width:100px;
@@ -43,6 +44,7 @@ export default function Side() {
 <button>fertilizer</button>
 <button>herbalcide</button>
 <button>insectside</button>
+<button>simlaw seed</button>
 <button>animal & bird feeds</button>
 
     </Wrapper>
