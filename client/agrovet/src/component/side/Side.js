@@ -8,6 +8,7 @@ export default function Side() {
         font-weight:200;
         font-size:24px;
         margin-left:30%;
+        margin-top:5px;
         
     };
     button{
