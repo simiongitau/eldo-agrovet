@@ -3,6 +3,7 @@ import Side from "../side/Side";
 import Data from "../../Data";
 import styled from "styled-components";
 import Products from "./Products";
+import Footer from "../footer/Footer";
 export default function Product() {
   const Main = styled.div`
     display: flex;
@@ -19,15 +20,18 @@ export default function Product() {
   `;
   // console.log(Data);
   return (
+    <>
     <Main>
       <Light>
         <Side />
       </Light>
-      <Right>
+      <Right className="row">
         {Data.map((product) => {
           return <Products product={product} key={product.name} />;
         })}
       </Right>
     </Main>
+    <Footer/>
+    </>
   );
 }
