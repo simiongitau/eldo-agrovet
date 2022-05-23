@@ -13,8 +13,8 @@ export default function Side() {
     };
     button{
         width:150px;
-        padding-top:15px;
-        padding-bottom:15px;
+        padding-top:5px;
+        padding-bottom:5px;
         margin-left:30px;
         margin-bottom:20px;
         border-radius:10px;
@@ -24,7 +24,7 @@ export default function Side() {
         border:none;
         outline:none;
         text-transform:uppercase;
-        height:60px;
+        height:50px;
     };
     div{
         width:100px;

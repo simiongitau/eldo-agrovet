@@ -3,6 +3,7 @@ import Side from "../side/Side";
 import Data from "../../Data";
 import styled from "styled-components";
 import Products from "./Products";
+import "./product.css"
 import Footer from "../footer/Footer";
 export default function Product() {
   const Main = styled.div`
@@ -25,13 +26,17 @@ export default function Product() {
       <Light>
         <Side />
       </Light>
-      <Right className="row">
+      <Right className="container">
+        <div className="row">
         {Data.map((product) => {
           return <Products product={product} key={product.name} />;
         })}
+        </div>
       </Right>
     </Main>
+    <div className="footer">
     <Footer/>
+    </div>
     </>
   );
 }

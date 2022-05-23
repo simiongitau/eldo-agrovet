@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 export default function Products({product}) {
   const Wrapper=styled.div`
   background-color:rgba(165, 173, 180, 0.842);
@@ -52,7 +53,8 @@ img{
   console.log(product)
   const{name,imagi,price}=product;
   return (
-    <Wrapper className=''>
+    <div className='col-lg-3'>
+    <Wrapper >
       {/* we have image */}
       <img src={imagi} alt="photos"/>
       {/* div containing price and the name of product */}
@@ -60,9 +62,11 @@ img{
         <span>{name}</span> <span>{price}</span>
       </Info>
       <Nav>
-        <button>maelezo</button><button>add to cart</button>
+       <Link to='/detail'> <button onClick={()=>console.log("you click me")}>maelezo</button></Link>
+       <button>add to cart</button>
       </Nav>
      
     </Wrapper>
+    </div>
   )
 }

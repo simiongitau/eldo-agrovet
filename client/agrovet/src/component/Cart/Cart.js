@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import top from '../../assert/images (1).jpg'
-import Footer from '../footer/Footer'
 export default function Cart() {
     const Wrapper=styled.div`
     
@@ -44,16 +43,6 @@ export default function Cart() {
     margin-left:20px;
     margin-right:5px;
     padding-left:12px;
-    span{
-      display:flex;
-      margin-top:5px;
-      align-items:center;
-      h5{
-        color:white;
-        font-weight:200;
-        font-size:15px;
-      };
-    }
     button{
       width:100px;
       padding:3px;
@@ -95,7 +84,9 @@ export default function Cart() {
     };
     img{
       border-radius:9px;
-      height:15vh;
+      height:17vh;
+      width:150px;
+      object:cover;
     }
     `;
     const Quantiy=styled.div`
@@ -171,7 +162,33 @@ export default function Cart() {
         background-color:rgba(183, 234, 243, 0.63);
       }
     }
-    `
+    `;
+    const Tax=styled.span`
+      display:flex;
+      margin-top:15px;
+      align-items:center;
+      h5{
+        color:white;
+        font-weight:200;
+        font-size:15px;
+      };
+      span{
+        display:flex;
+        justify-content:space-between;
+        margin-left:140px;
+        align-items:center;
+      }
+    
+    `;
+    const Total=styled.div`
+    display:flex;
+    justify-content:space-between;
+    margin-top:5px;
+    text-transform:uppercase;
+    h4{
+      border-bottom:1px solid red;
+    }
+    `;
   return (
     <Wrapper>
       {/* neader section   */}
@@ -218,7 +235,9 @@ export default function Cart() {
       
       {/* location */}
       </Container>
-      <span><h5>tax 16% and transport fee</h5><span><span>200</span><h5>ksh</h5></span></span>
+      <Tax><h5>tax 16% and transport fee</h5><span><h4>200</h4><h4>ksh</h4></span></Tax>
+
+      <Total><span>total cost</span><h4>60 000 ksh</h4></Total>
       <>
       <button>checkout</button>
       

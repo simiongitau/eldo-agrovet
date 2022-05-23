@@ -1,5 +1,5 @@
-.nav{
+.footer{
     position: sticky;
-    top:0;
+    bottom:0px;
     z-index: 1;
 }
