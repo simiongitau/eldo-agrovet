@@ -53,8 +53,8 @@ img{
   console.log(product)
   const{name,imagi,price}=product;
   return (
-    <div className='col-lg-3'>
-    <Wrapper >
+    <div className='col-lg-3 col-sm-6'>
+    <Wrapper >  
       {/* we have image */}
       <img src={imagi} alt="photos"/>
       {/* div containing price and the name of product */}
